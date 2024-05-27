@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #board {
+        width: 400px;
+        margin: 20px auto;
+      }
+      #status {
+        text-align: center;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      "
+    >
+      <h1>Online Chess Game</h1>
+      <div id="status"></div>
+      <div id="chessboard"></div>
+    </div>
+
+    <div style="display: flex; flex-direction: column">
+      <div
+        id="chatbox"
+        style="display: flex; flex-direction: column; gap: 5px"
+      ></div>
+      <div style="display: flex; align-items: center">
+        <input id="chat-input" value="" placeholder="send message..." />
+        <button id="chat-send-button">Send</button>
+      </div>
+    </div>
+
+    <script src="./chessboard.js"></script>
+    <script src="./client.js"></script>
+  </body>
+</html>
